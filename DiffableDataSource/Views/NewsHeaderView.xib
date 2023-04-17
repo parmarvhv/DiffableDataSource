@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsHeaderView" id="U6b-Vx-4bR" customClass="NewsHeaderView" customModule="SNBRI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adU-5S-JDR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spy-cb-lBL">
+                            <rect key="frame" x="20" y="15.5" width="280" height="19.5"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                            <color key="textColor" red="0.93725490196078431" green="0.38431372549019605" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udu-ky-Alr">
+                            <rect key="frame" x="20" y="44" width="280" height="1"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.1806419322032802" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="oVd-fe-P0E"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Udu-ky-Alr" secondAttribute="trailing" constant="20" id="AHc-c9-O15"/>
+                        <constraint firstItem="spy-cb-lBL" firstAttribute="centerY" secondItem="adU-5S-JDR" secondAttribute="centerY" id="FeM-X4-yKX"/>
+                        <constraint firstAttribute="bottom" secondItem="Udu-ky-Alr" secondAttribute="bottom" constant="5" id="Rio-yw-VTM"/>
+                        <constraint firstItem="spy-cb-lBL" firstAttribute="leading" secondItem="adU-5S-JDR" secondAttribute="leading" constant="20" id="URr-qJ-2S3"/>
+                        <constraint firstItem="Udu-ky-Alr" firstAttribute="leading" secondItem="adU-5S-JDR" secondAttribute="leading" constant="20" id="ZQR-Qe-LkT"/>
+                        <constraint firstAttribute="trailing" secondItem="spy-cb-lBL" secondAttribute="trailing" constant="20" id="qzZ-Dj-HAA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="adU-5S-JDR" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="aQx-zy-TvP"/>
+                <constraint firstItem="adU-5S-JDR" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="lrR-uU-nOp"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="adU-5S-JDR" secondAttribute="trailing" id="tcl-fP-43B"/>
+                <constraint firstAttribute="bottom" secondItem="adU-5S-JDR" secondAttribute="bottom" id="ucU-cE-X1C"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="spy-cb-lBL" id="L43-7w-mWP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="146.65178571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>
